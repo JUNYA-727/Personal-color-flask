@@ -28,7 +28,7 @@
 https://drive.google.com/file/d/1ESLm0Ri3QNrz5isLr1jwXVvSvYaBpNmi/view?usp=sharing
 * shape_predictor_68_face_landmarks.datは与えられた画像に対して特徴量となる顔だけを切り取る際に使用します｡こちらも使用する際は同様ダウンロードを行う必要があります｡
 https://drive.google.com/file/d/1Ga4OTpjr3YPHyoWOanHiTRQa6Howy5Qn/view?usp=sharing
-＊ 画像の保存を行うため､staticという空ファイルを作っておいて下さい｡
+* 画像の保存を行うため､staticという空ファイルを作っておいて下さい｡
 ```bash
 python server.py
 ```
