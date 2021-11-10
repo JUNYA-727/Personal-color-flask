@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+   <body>
+      {% if autumn %}
+         <img src="{{filepath}} " border="1"> <br>
+         予測結果<br>
+         あなたが春タイプである可能性は:{{spring}}<br>
+         あなたが夏タイプである可能性は:{{summer}}<br>
+         あなたが秋タイプである可能性は:{{autumn}}<br>
+         あなたが冬タイプである可能性は:{{winter}}<br>        
+         {%if ans==0 %}
+            あなたは秋タイプの可能性が高いです｡<br>
+         {%elif ans==1 %}
+            あなたは春タイプの可能性が高いです｡<br>
+         {%elif ans==2 %}
+            あなたは夏タイプの可能性が高いです｡<br>
+         {%elif ans==3 %}
+            あなたは冬タイプの可能性が高いです｡<br>
+         {% endif %}
+         <hr>
+      {% endif %}
+         ファイルを選択して送信してください<br>
+         <form action = "./" method = "POST" 
+            enctype = "multipart/form-data">
+            <input type = "file" name = "file" />
+            <input type = "submit"/>
+         </form>
+   </body>
+</html>                                         
